@@ -74,11 +74,11 @@ def load_config():
     """Load configuration from config file or create default if not exists."""
     if not CONFIG_PATH.exists():
         CONFIG_PATH.parent.mkdir(exist_ok=True)
-        with open(CONFIG_PATH, 'w') as f:
+        with open(CONFIG_PATH, 'w', encoding='utf-8') as f:
             json.dump(DEFAULT_CONFIG, f, indent=2)
         return DEFAULT_CONFIG
     
-    with open(CONFIG_PATH, 'r') as f:
+    with open(CONFIG_PATH, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 
@@ -146,7 +146,7 @@ def update_markdown_file(category, new_prompts):
     # Create file if it doesn't exist
     if not file_path.exists():
         file_path.parent.mkdir(exist_ok=True)
-        with open(file_path, 'w') as f:
+        with open(file_path, 'w', encoding='utf-8') as f:
             f.write(f"# {category.title()} Prompts\n\n")
             f.write(f"A collection of effective prompts specifically designed for {category.title()} models.\n\n")
             
@@ -161,7 +161,7 @@ def update_markdown_file(category, new_prompts):
             f.write("\n<!-- This file is automatically updated daily -->")
     
     # Read existing content
-    with open(file_path, 'r') as f:
+    with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
     # Extract existing table rows
@@ -198,7 +198,7 @@ def update_markdown_file(category, new_prompts):
         updated_content = content[:next_line + 1] + "\n".join(new_rows) + "\n" + content[next_line + 1:]
         
         # Write updated content
-        with open(file_path, 'w') as f:
+        with open(file_path, 'w', encoding='utf-8') as f:
             f.write(updated_content)
         
         logger.info(f"Added {len(new_rows)} new prompts to {category}.md")
@@ -211,7 +211,7 @@ def update_readme_stats():
     # Count total prompts
     total_prompts = 0
     for md_file in PROMPTS_DIR.glob("*.md"):
-        with open(md_file, 'r') as f:
+        with open(md_file, 'r', encoding='utf-8') as f:
             content = f.read()
             # Count table rows (excluding header and separator)
             rows = re.findall(r"^\|.*\|$", content, re.MULTILINE)
@@ -221,8 +221,11 @@ def update_readme_stats():
     # Count categories
     categories = len(list(PROMPTS_DIR.glob("*.md")))
     
+    # Count contributors (in a real implementation, this would be fetched from GitHub API)
+    contributors = 1
+    
     # Update README
-    with open(README_PATH, 'r') as f:
+    with open(README_PATH, 'r', encoding='utf-8') as f:
         content = f.read()
     
     # Update last refresh date
@@ -230,16 +233,17 @@ def update_readme_stats():
     content = re.sub(r"<h3>Last refresh: <span style=\"color:#00CC66\">(.*?)</span></h3>", 
                     f"<h3>Last refresh: <span style=\"color:#00CC66\">{today}</span></h3>", content)
     
-    # Update stats in the new table format
-    content = re.sub(r"<td>\d+</td>\s*</tr>\s*<tr>\s*<td align=\"center\"><h3>🗂️</h3></td>", 
-                    f"<td>{total_prompts}</td>\n  </tr>\n  <tr>\n    <td align=\"center\"><h3>🗂️</h3></td>", content)
-    content = re.sub(r"<td>\d+</td>\s*</tr>\s*<tr>\s*<td align=\"center\"><h3>👥</h3></td>", 
-                    f"<td>{categories}</td>\n  </tr>\n  <tr>\n    <td align=\"center\"><h3>👥</h3></td>", content)
+    # Update stats in the table format
+    # Find the stats table and update each value
+    stats_pattern = r'(<table>\s*<tr>\s*<td align="center"><h3>📝</h3></td>\s*<td><b>Total Prompts:</b></td>\s*<td>)\d+(</td>\s*</tr>\s*<tr>\s*<td align="center"><h3>🗂️</h3></td>\s*<td><b>Categories:</b></td>\s*<td>)\d+(</td>\s*</tr>\s*<tr>\s*<td align="center"><h3>👥</h3></td>\s*<td><b>Contributors:</b></td>\s*<td>)\d+(</td>)'
     
-    with open(README_PATH, 'w') as f:
+    replacement = f'\g<1>{total_prompts}\g<2>{categories}\g<3>{contributors}\g<4>'
+    content = re.sub(stats_pattern, replacement, content)
+    
+    with open(README_PATH, 'w', encoding='utf-8') as f:
         f.write(content)
     
-    logger.info(f"Updated README stats: {total_prompts} prompts across {categories} categories")
+    logger.info(f"Updated README stats: {total_prompts} prompts across {categories} categories with {contributors} contributors")
 
 
 def main():

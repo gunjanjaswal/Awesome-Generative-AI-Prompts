@@ -8,9 +8,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow.svg)](https://www.buymeacoffee.com/gunjanjaswal)
 
-<p align="center">
-  <img src="https://i.imgur.com/YmFYrQe.png" alt="AI Prompts Banner" width="600">
-</p>
+<h1 align="center">
+  🧠💬 Awesome AI Prompts Collection 🎨✨
+</h1>
 
 ### A curated, self-updating collection of effective prompts for various generative AI models and clients
 
@@ -52,18 +52,18 @@ _This repository automatically updates daily to include the latest and most effe
 <div align="center">
 <table>
   <tr>
-    <td align="center"><a href="./prompts/chatgpt.md"><img src="https://i.imgur.com/7OX5oXs.png" width="70px" /><br /><b>ChatGPT</b></a></td>
-    <td align="center"><a href="./prompts/midjourney.md"><img src="https://i.imgur.com/vNWYEzQ.png" width="70px" /><br /><b>Midjourney</b></a></td>
-    <td align="center"><a href="./prompts/dalle.md"><img src="https://i.imgur.com/kbLOlKN.png" width="70px" /><br /><b>DALL-E</b></a></td>
-    <td align="center"><a href="./prompts/stable-diffusion.md"><img src="https://i.imgur.com/Iy4KxNZ.png" width="70px" /><br /><b>Stable Diffusion</b></a></td>
-    <td align="center"><a href="./prompts/claude.md"><img src="https://i.imgur.com/YzgQj2P.png" width="70px" /><br /><b>Claude</b></a></td>
+    <td align="center"><a href="./prompts/chatgpt.md"><h2>💬</h2><br /><b>ChatGPT</b></a></td>
+    <td align="center"><a href="./prompts/midjourney.md"><h2>🖼️</h2><br /><b>Midjourney</b></a></td>
+    <td align="center"><a href="./prompts/dalle.md"><h2>🎨</h2><br /><b>DALL-E</b></a></td>
+    <td align="center"><a href="./prompts/stable-diffusion.md"><h2>🌈</h2><br /><b>Stable Diffusion</b></a></td>
+    <td align="center"><a href="./prompts/claude.md"><h2>🧠</h2><br /><b>Claude</b></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="./prompts/gemini.md"><img src="https://i.imgur.com/QmUwKnJ.png" width="70px" /><br /><b>Gemini</b></a></td>
-    <td align="center"><a href="./prompts/coding.md"><img src="https://i.imgur.com/4TpQoYy.png" width="70px" /><br /><b>Coding</b></a></td>
-    <td align="center"><a href="./prompts/writing.md"><img src="https://i.imgur.com/nAZknPf.png" width="70px" /><br /><b>Writing</b></a></td>
-    <td align="center"><a href="./prompts/image-generation.md"><img src="https://i.imgur.com/fTWOWXK.png" width="70px" /><br /><b>Image Gen</b></a></td>
-    <td align="center"><a href="./prompts/business.md"><img src="https://i.imgur.com/kJDNHxH.png" width="70px" /><br /><b>Business</b></a></td>
+    <td align="center"><a href="./prompts/gemini.md"><h2>♊</h2><br /><b>Gemini</b></a></td>
+    <td align="center"><a href="./prompts/coding.md"><h2>👨‍💻</h2><br /><b>Coding</b></a></td>
+    <td align="center"><a href="./prompts/writing.md"><h2>✍️</h2><br /><b>Writing</b></a></td>
+    <td align="center"><a href="./prompts/image-generation.md"><h2>🖌️</h2><br /><b>Image Gen</b></a></td>
+    <td align="center"><a href="./prompts/business.md"><h2>💼</h2><br /><b>Business</b></a></td>
   </tr>
 </table>
 </div>
@@ -101,7 +101,7 @@ _This repository automatically updates daily to include the latest and most effe
 
 _This section is automatically updated by our daily workflow_
 
-<h3>Last refresh: <span style="color:#00CC66">October 3, 2025</span></h3>
+<h3>Last refresh: <span style="color:#00CC66">October 03, 2025</span></h3>
 
 </div>
 
@@ -111,9 +111,7 @@ _This section is automatically updated by our daily workflow_
 
 <p>Contributions are welcome! Please see our <a href="CONTRIBUTING.md">Contributing Guidelines</a> for more information.</p>
 
-<a href="https://github.com/gunjanjaswal/Awesome-Generative-AI-Prompts/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=gunjanjaswal/Awesome-Generative-AI-Prompts" />
-</a>
+<p>👥 Contributors: <a href="https://github.com/gunjanjaswal/Awesome-Generative-AI-Prompts/graphs/contributors">View all contributors</a></p>
 
 </div>
 
@@ -127,7 +125,7 @@ _This section is automatically updated by our daily workflow_
   <tr>
     <td align="center"><h3>📝</h3></td>
     <td><b>Total Prompts:</b></td>
-    <td>0</td>
+    <td>59</td>
   </tr>
   <tr>
     <td align="center"><h3>🗂️</h3></td>
@@ -166,8 +164,6 @@ _This section is automatically updated by our daily workflow_
 
 <p>If you find this project helpful, consider buying me a coffee!</p>
 
-<a href="https://www.buymeacoffee.com/gunjanjaswal">
-  <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" />
-</a>
+<a href="https://www.buymeacoffee.com/gunjanjaswal">☕ Buy Me A Coffee</a>
 
 </div>
