@@ -4,6 +4,7 @@ A collection of effective prompts specifically designed for ChatGPT models.
 
 | Prompt | Description | Category | Source | Date Added |
 |--------|-------------|----------|--------|------------|
+| Explain the concept of quantum computing as if I'm a medieval peasant | Simplified explanation of complex topics | Education | https://api.example.com/chatgpt/prompts | 2025-12-21 |
 | Explain the concept of blockchain as if I'm 5 years old | Simplified explanation of complex topics | Education | https://api.example.com/chatgpt/prompts | 2025-10-03 |
 | Explain the concept of quantum computing as if I'm an alien | Simplified explanation of complex topics | Education | https://api.example.com/chatgpt/prompts | 2025-10-03 |
 | Explain the concept of quantum computing as if I'm 5 years old | Simplified explanation of complex topics | Education | https://api.example.com/chatgpt/prompts | 2025-10-03 |
