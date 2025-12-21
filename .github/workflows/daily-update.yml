@@ -35,11 +35,37 @@ jobs:
           python scripts/update_prompts.py
 
       - name: Commit and push changes
+        id: commit
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add prompts/ README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update prompts $(date +'%Y-%m-%d')" && git push)
+          # Check if there are changes to commit
+          if ! git diff --quiet || ! git diff --staged --quiet; then
+            git commit -m "Update prompts $(date +'%Y-%m-%d')"
+            git push
+          else
+            echo "No changes to commit."
+          fi
 
-      - name: Keepalive Workflow
-        uses: gautamkrishnar/keepalive-workflow@v1
+      - name: Keepalive
+        if: github.event_name == 'schedule'
+        run: |
+          # Fetch latest commit info
+          # actions/checkout@v3 creates a shallow clone, which is fine for getting the latest commit
+          last_commit_ts=$(git log -1 --format=%ct)
+          current_ts=$(date +%s)
+          days_diff=$(( ($current_ts - $last_commit_ts) / 86400 ))
+          
+          echo "Days since last commit: $days_diff"
+          
+          if [ "$days_diff" -gt 50 ]; then
+            echo "Repository inactive for >50 days. Creating keepalive commit."
+            mkdir -p .github
+            date > .github/keepalive
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add .github/keepalive
+            git commit -m "Keepalive: prevent workflow disablement"
+            git push
+          fi
