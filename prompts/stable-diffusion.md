@@ -4,6 +4,9 @@ A collection of effective prompts specifically designed for Stable-Diffusion mod
 
 | Prompt | Description | Style | Parameters | Source | Date Added |
 |--------|-------------|-------|------------|--------|------------|
+| A anime of landscape | Generates creative imagery | oil painting | --ar 1:1 --v 5 | https://api.example.com/stable-diffusion/prompts | 2025-12-22 |
+| A oil painting of landscape | Generates creative imagery | photorealistic | --ar 16:9 --v 5 | https://api.example.com/stable-diffusion/prompts | 2025-12-22 |
+| A 3D render of landscape | Generates creative imagery | photorealistic | --ar 16:9 --v 5 | https://api.example.com/stable-diffusion/prompts | 2025-12-22 |
 | A photorealistic of abstract concept | Generates creative imagery | oil painting | --ar 1:1 --v 5 | https://api.example.com/stable-diffusion/prompts | 2025-12-21 |
 | A anime of portrait | Generates creative imagery | watercolor | --ar 2:3 --v 5 | https://api.example.com/stable-diffusion/prompts | 2025-12-21 |
 | A photorealistic of abstract concept | Generates creative imagery | oil painting | --ar 2:3 --v 5 | https://api.example.com/stable-diffusion/prompts | 2025-12-21 |

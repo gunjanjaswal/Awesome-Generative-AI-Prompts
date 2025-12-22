@@ -4,6 +4,9 @@ A collection of effective prompts specifically designed for DALL-E image generat
 
 | Prompt | Description | Model | Source | Date Added |
 |--------|-------------|-------|--------|------------|
+| A 3D render of portrait | Generates creative imagery | watercolor | --ar 2:3 --v 5 | https://api.example.com/dalle/prompts | 2025-12-22 |
+| A watercolor of abstract concept | Generates creative imagery | watercolor | --ar 16:9 --v 5 | https://api.example.com/dalle/prompts | 2025-12-22 |
+| A oil painting of landscape | Generates creative imagery | anime | --ar 16:9 --v 5 | https://api.example.com/dalle/prompts | 2025-12-22 |
 | A oil painting of landscape | Generates creative imagery | oil painting | --ar 16:9 --v 5 | https://api.example.com/dalle/prompts | 2025-12-21 |
 | A watercolor of sci-fi scene | Generates creative imagery | oil painting | --ar 2:3 --v 5 | https://api.example.com/dalle/prompts | 2025-12-21 |
 | A 3D render of landscape | Generates creative imagery | 3D render | --ar 1:1 --v 5 | https://api.example.com/dalle/prompts | 2025-12-21 |
