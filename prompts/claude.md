@@ -4,6 +4,8 @@ A collection of effective prompts specifically designed for Claude models.
 
 | Prompt | Description | Category | Source | Date Added |
 |--------|-------------|----------|--------|------------|
+| Generate a creative analysis about nature | General purpose prompt | Content Creation | https://api.example.com/claude/prompts | 2025-12-23 |
+| Generate a creative analysis about nature | General purpose prompt | Content Creation | https://api.example.com/claude/prompts | 2025-12-23 |
 | Generate a concise analysis about technology | General purpose prompt | Content Creation | https://api.example.com/claude/prompts | 2025-12-22 |
 | Generate a concise explanation about technology | General purpose prompt | Content Creation | https://api.example.com/claude/prompts | 2025-12-22 |
 | Generate a concise analysis about nature | General purpose prompt | Content Creation | https://api.example.com/claude/prompts | 2025-12-21 |
