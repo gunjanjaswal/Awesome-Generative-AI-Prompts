@@ -4,6 +4,7 @@ A collection of effective prompts specifically designed for Midjourney image gen
 
 | Prompt | Description | Style | Parameters | Source | Date Added |
 |--------|-------------|-------|------------|--------|------------|
+| A oil painting of portrait | Generates creative imagery | oil painting | --ar 1:1 --v 5 | https://api.example.com/midjourney/prompts | 2025-12-24 |
 | A 3D render of sci-fi scene | Generates creative imagery | 3D render | --ar 16:9 --v 5 | https://api.example.com/midjourney/prompts | 2025-12-23 |
 | A watercolor of landscape | Generates creative imagery | anime | --ar 2:3 --v 5 | https://api.example.com/midjourney/prompts | 2025-12-23 |
 | A oil painting of abstract concept | Generates creative imagery | photorealistic | --ar 16:9 --v 5 | https://api.example.com/midjourney/prompts | 2025-12-23 |
