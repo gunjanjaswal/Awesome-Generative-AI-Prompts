@@ -4,6 +4,7 @@ A collection of effective prompts specifically designed for Gemini models.
 
 | Prompt | Description | Category | Source | Date Added |
 |--------|-------------|----------|--------|------------|
+| Generate a creative analysis about history | General purpose prompt | Content Creation | https://api.example.com/gemini/prompts | 2025-12-26 |
 | Generate a concise analysis about technology | General purpose prompt | Content Creation | https://api.example.com/gemini/prompts | 2025-12-24 |
 | Generate a concise explanation about history | General purpose prompt | Content Creation | https://api.example.com/gemini/prompts | 2025-12-22 |
 | Generate a concise story about technology | General purpose prompt | Content Creation | https://api.example.com/gemini/prompts | 2025-12-22 |
