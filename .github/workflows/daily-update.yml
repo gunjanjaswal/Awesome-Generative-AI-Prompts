@@ -1,4 +1,4 @@
-name: Prompt Updates
+name: Daily Prompt Updates
 
 on:
   schedule:
@@ -6,53 +6,52 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
     # Allow manual triggering
-  push:
-    branches: [ main, master ]
 
 jobs:
   update-prompts:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install requests beautifulsoup4 openai anthropic
 
-      - name: Run update script
+      - name: Scrape and update prompts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/update_prompts.py
+          python scripts/scrape_prompts.py
 
-      - name: Commit and push changes
-        id: commit
+      - name: Commit and push if changed
         run: |
           git config --local user.email "gunjanjaswal@gmail.com"
           git config --local user.name "Gunjan Jaswaal"
-          git add prompts/ README.md
-          # Check if there are changes to commit
-          if ! git diff --quiet || ! git diff --staged --quiet; then
-            git commit -m "Update prompts $(date +'%Y-%m-%d')"
+          git add prompts.json
+          
+          # Check if there are changes
+          if ! git diff --quiet --staged; then
+            git commit -m "🤖 Auto-update: New prompts from $(date +'%Y-%m-%d')"
             git push
+            echo "✅ Prompts updated and pushed"
           else
-            echo "No changes to commit."
+            echo "ℹ️ No new prompts found"
           fi
 
       - name: Keepalive
         if: github.event_name == 'schedule'
         run: |
-          # Fetch latest commit info
-          # actions/checkout@v3 creates a shallow clone, which is fine for getting the latest commit
+          # Prevent workflow from being disabled due to inactivity
           last_commit_ts=$(git log -1 --format=%ct)
           current_ts=$(date +%s)
           days_diff=$(( ($current_ts - $last_commit_ts) / 86400 ))
@@ -61,11 +60,10 @@ jobs:
           
           if [ "$days_diff" -gt 50 ]; then
             echo "Repository inactive for >50 days. Creating keepalive commit."
-            mkdir -p .github
             date > .github/keepalive
             git config --local user.email "gunjanjaswal@gmail.com"
             git config --local user.name "Gunjan Jaswaal"
             git add .github/keepalive
-            git commit -m "Keepalive: prevent workflow disablement"
+            git commit -m "🔄 Keepalive: prevent workflow disablement"
             git push
           fi

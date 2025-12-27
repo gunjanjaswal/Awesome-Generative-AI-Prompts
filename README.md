@@ -5,6 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/gunjanjaswal/Awesome-Generative-AI-Prompts?style=social)](https://github.com/gunjanjaswal/Awesome-Generative-AI-Prompts/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/gunjanjaswal/Awesome-Generative-AI-Prompts?style=social)](https://github.com/gunjanjaswal/Awesome-Generative-AI-Prompts/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow.svg)](https://buymeacoffee.com/gunjanjaswal)
 
 ### 🎯 Production-Ready Prompts for Developers & Creators
 
@@ -31,9 +32,9 @@ Tested, detailed templates<br/>
 Real-world use cases
 </td>
 <td width="33%" align="center">
-<h3>🛠️ Developer-Friendly</h3>
-CLI tool, browser extension<br/>
-JSON API available
+<h3>🤖 Auto-Updated</h3>
+New prompts added daily<br/>
+Always fresh content
 </td>
 </tr>
 </table>
@@ -751,6 +752,8 @@ Use:
 
 We welcome high-quality prompt submissions! 
 
+> **Note**: This repository also auto-updates daily with new prompts from Reddit and other sources. See [Automated Updates](docs/AUTOMATED_UPDATES.md) for details.
+
 **Submit a Prompt:**
 1. [Open an issue](https://github.com/gunjanjaswal/Awesome-Generative-AI-Prompts/issues/new?template=submit-prompt.yml) with the "Submit Prompt" template
 2. Fill in all required fields
@@ -773,11 +776,11 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## ⭐ Star History
+## ☕ Support This Project
 
-If you find this useful, please star the repo! It helps others discover these prompts.
+If you find PromptVault helpful, consider buying me a coffee! Your support helps keep this project free and updated.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=gunjanjaswal/Awesome-Generative-AI-Prompts&type=Date)](https://star-history.com/#gunjanjaswal/Awesome-Generative-AI-Prompts&Date)
+<a href="https://buymeacoffee.com/gunjanjaswal" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ---
 
@@ -785,7 +788,18 @@ If you find this useful, please star the repo! It helps others discover these pr
 
 - Inspired by the [Awesome](https://github.com/sindresorhus/awesome) lists
 - Built for developers, by developers
+- Created by [Gunjan Jaswaal](https://www.gunjanjaswal.me)
 - Community-driven and open-source
+
+---
+
+## 📧 Contact
+
+- **Website**: [www.gunjanjaswal.me](https://www.gunjanjaswal.me)
+- **Email**: hello@gunjanjaswal.me
+- **GitHub**: [@gunjanjaswal](https://github.com/gunjanjaswal)
+
+For issues and feature requests, please use [GitHub Issues](https://github.com/gunjanjaswal/Awesome-Generative-AI-Prompts/issues).
 
 ---
 

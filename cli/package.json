@@ -14,7 +14,7 @@
         "gemini",
         "cli"
     ],
-    "author": "Gunjan Jaswal",
+    "author": "Gunjan Jaswaal <hello@gunjanjaswal.me> (https://www.gunjanjaswal.me)",
     "license": "MIT",
     "dependencies": {
         "clipboardy": "^3.0.0"
