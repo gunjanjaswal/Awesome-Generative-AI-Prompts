@@ -4,6 +4,7 @@ A collection of effective prompts specifically designed for Claude models.
 
 | Prompt | Description | Category | Source | Date Added |
 |--------|-------------|----------|--------|------------|
+| Generate a concise story about history | General purpose prompt | Content Creation | https://api.example.com/claude/prompts | 2025-12-27 |
 | Generate a creative explanation about history | General purpose prompt | Content Creation | https://api.example.com/claude/prompts | 2025-12-26 |
 | Generate a detailed explanation about history | General purpose prompt | Content Creation | https://api.example.com/claude/prompts | 2025-12-26 |
 | Generate a concise analysis about history | General purpose prompt | Content Creation | https://api.example.com/claude/prompts | 2025-12-24 |
