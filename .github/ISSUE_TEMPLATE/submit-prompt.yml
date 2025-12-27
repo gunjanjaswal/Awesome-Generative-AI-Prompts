@@ -1,0 +1,131 @@
+name: 🌟 Submit a Prompt
+description: Submit a new prompt to the collection
+title: "[Prompt]: "
+labels: ["prompt-submission", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! Please fill out the information below to submit your prompt.
+        
+  - type: input
+    id: title
+    attributes:
+      label: Prompt Title
+      description: A short, descriptive title for your prompt
+      placeholder: "e.g., Expert Code Reviewer"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this prompt belong to?
+      options:
+        - Coding & Development
+        - Content Creation
+        - Business & Professional
+        - Learning & Education
+        - Creative & Storytelling
+        - Productivity & Planning
+        - Image Generation
+        - Other (specify in description)
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty Level
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+      
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt Template
+      description: The actual prompt text with variables in [BRACKETS]
+      placeholder: |
+        Act as a [ROLE] with expertise in [DOMAIN]...
+        
+        [YOUR PROMPT HERE]
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Brief description of what this prompt does
+      placeholder: "e.g., Get comprehensive code review with actionable feedback"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Use Cases
+      description: List 2-3 real-world use cases (one per line)
+      placeholder: |
+        - Code review
+        - Bug detection
+        - Learning best practices
+    validations:
+      required: true
+      
+  - type: textarea
+    id: example
+    attributes:
+      label: Example Usage
+      description: Show how to use this prompt with a real example
+      placeholder: |
+        **Input:**
+        [Show filled-in prompt]
+        
+        **Output:**
+        [Show what the AI generated]
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: models
+    attributes:
+      label: Compatible AI Models
+      description: Which AI models have you tested this with?
+      options:
+        - label: ChatGPT
+        - label: Claude
+        - label: Gemini
+        - label: DALL-E
+        - label: Midjourney
+        - label: Stable Diffusion
+        - label: Other (specify in additional context)
+          
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other information about this prompt
+      placeholder: "Tips, variations, common pitfalls, etc."
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have tested this prompt with at least one AI model
+          required: true
+        - label: This prompt is specific and actionable (not too generic)
+          required: true
+        - label: I have checked that this prompt doesn't duplicate existing ones
+          required: true
+        - label: I have included clear variables/placeholders
+          required: true

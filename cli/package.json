@@ -1,0 +1,26 @@
+{
+    "name": "awesome-ai-prompts-cli",
+    "version": "1.0.0",
+    "description": "CLI tool for accessing awesome AI prompts",
+    "main": "prompts.js",
+    "bin": {
+        "prompts": "./prompts.js"
+    },
+    "keywords": [
+        "ai",
+        "prompts",
+        "chatgpt",
+        "claude",
+        "gemini",
+        "cli"
+    ],
+    "author": "Gunjan Jaswal",
+    "license": "MIT",
+    "dependencies": {
+        "clipboardy": "^3.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gunjanjaswal/Awesome-Generative-AI-Prompts.git"
+    }
+}

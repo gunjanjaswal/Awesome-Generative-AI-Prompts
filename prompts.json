@@ -1,0 +1,520 @@
+{
+  "version": "2.0",
+  "last_updated": "2025-12-27",
+  "total_prompts": 45,
+  "categories": {
+    "coding": "Code Generation & Debugging",
+    "content-creation": "Writing & Content",
+    "business": "Business & Professional",
+    "learning": "Education & Learning",
+    "creative": "Creative & Storytelling",
+    "productivity": "Productivity & Planning",
+    "image-generation": "Image Generation"
+  },
+  "prompts": [
+    {
+      "id": "code-001",
+      "title": "Expert Code Reviewer",
+      "prompt": "Act as a senior code reviewer with 15+ years of experience. Review the following code for:\n1. Potential bugs and edge cases\n2. Performance optimizations\n3. Security vulnerabilities\n4. Code readability and maintainability\n5. Best practices violations\n\nProvide specific suggestions with examples.\n\n[YOUR CODE HERE]",
+      "description": "Get comprehensive code review with actionable feedback",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "rating": 4.8,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "code-review",
+        "debugging",
+        "best-practices"
+      ],
+      "use_cases": [
+        "Code review",
+        "Bug detection",
+        "Learning best practices"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "code-002",
+      "title": "Debug Assistant",
+      "prompt": "I'm getting an error in my [LANGUAGE] code. Help me debug it step by step:\n\n1. Explain what the error means\n2. Identify the root cause\n3. Provide a fixed version\n4. Explain why the fix works\n5. Suggest how to prevent similar issues\n\nError: [ERROR MESSAGE]\nCode: [YOUR CODE]",
+      "description": "Step-by-step debugging assistance",
+      "category": "coding",
+      "difficulty": "beginner",
+      "rating": 4.7,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "debugging",
+        "error-fixing",
+        "learning"
+      ],
+      "use_cases": [
+        "Debugging",
+        "Understanding errors",
+        "Learning"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "code-003",
+      "title": "Code Explainer",
+      "prompt": "Explain this [LANGUAGE] code like I'm a [SKILL_LEVEL] developer:\n\n1. What does this code do? (high-level overview)\n2. Break down each section step-by-step\n3. Explain any complex concepts or patterns used\n4. Highlight any clever or noteworthy techniques\n5. Suggest improvements or alternatives\n\n[YOUR CODE HERE]",
+      "description": "Understand complex code with detailed explanations",
+      "category": "coding",
+      "difficulty": "beginner",
+      "rating": 4.9,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "learning",
+        "code-explanation",
+        "education"
+      ],
+      "use_cases": [
+        "Learning new codebases",
+        "Understanding algorithms",
+        "Code documentation"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "code-004",
+      "title": "Function Generator",
+      "prompt": "Create a [LANGUAGE] function that [SPECIFIC_TASK] with these requirements:\n\n**Functionality:**\n- [Requirement 1]\n- [Requirement 2]\n- [Requirement 3]\n\n**Constraints:**\n- [Constraint 1]\n- [Constraint 2]\n\n**Additional:**\n- Include error handling\n- Add type hints/annotations\n- Write docstring/comments\n- Provide usage examples\n- Consider edge cases",
+      "description": "Generate production-ready functions with documentation",
+      "category": "coding",
+      "difficulty": "intermediate",
+      "rating": 4.6,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "code-generation",
+        "functions",
+        "documentation"
+      ],
+      "use_cases": [
+        "Rapid prototyping",
+        "Boilerplate generation",
+        "Learning patterns"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "code-005",
+      "title": "Refactoring Expert",
+      "prompt": "Refactor this code to improve [ASPECT: performance/readability/maintainability]:\n\n**Current Code:**\n[YOUR CODE]\n\n**Please provide:**\n1. Refactored version with explanations\n2. What improved and why\n3. Any trade-offs made\n4. Performance impact (if applicable)\n5. Before/after comparison",
+      "description": "Improve code quality with expert refactoring",
+      "category": "coding",
+      "difficulty": "advanced",
+      "rating": 4.7,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "refactoring",
+        "code-quality",
+        "optimization"
+      ],
+      "use_cases": [
+        "Code improvement",
+        "Technical debt reduction",
+        "Learning patterns"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "content-001",
+      "title": "Blog Post Writer",
+      "prompt": "Write a comprehensive blog post about [TOPIC] for [TARGET_AUDIENCE]:\n\n**Requirements:**\n- Tone: [professional/casual/technical/friendly]\n- Length: [word count]\n- Include: [specific elements]\n- SEO keywords: [keywords]\n\n**Structure:**\n1. Attention-grabbing headline\n2. Compelling introduction with hook\n3. Main content with subheadings\n4. Practical examples or case studies\n5. Actionable takeaways\n6. Strong conclusion with CTA",
+      "description": "Create engaging, SEO-optimized blog content",
+      "category": "content-creation",
+      "difficulty": "intermediate",
+      "rating": 4.8,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "writing",
+        "blog",
+        "seo",
+        "content-marketing"
+      ],
+      "use_cases": [
+        "Content marketing",
+        "Blogging",
+        "SEO"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "content-002",
+      "title": "Social Media Content Creator",
+      "prompt": "Create [NUMBER] social media posts about [TOPIC] for [PLATFORM]:\n\n**Brand Voice:** [describe tone/personality]\n**Goal:** [engagement/awareness/conversion]\n**Target Audience:** [description]\n\n**For each post include:**\n- Compelling copy (within character limit)\n- Relevant hashtags (mix of popular and niche)\n- Call-to-action\n- Best posting time suggestion\n- Visual content description",
+      "description": "Generate platform-specific social media content",
+      "category": "content-creation",
+      "difficulty": "beginner",
+      "rating": 4.6,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "social-media",
+        "marketing",
+        "engagement"
+      ],
+      "use_cases": [
+        "Social media marketing",
+        "Content planning",
+        "Engagement"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "content-003",
+      "title": "Email Copywriter",
+      "prompt": "Write a [TYPE: promotional/newsletter/cold outreach] email:\n\n**Context:**\n- To: [recipient type]\n- Goal: [specific objective]\n- Key message: [main point]\n- Tone: [professional/friendly/urgent]\n\n**Include:**\n1. Subject line (A/B test variants)\n2. Preview text\n3. Personalized greeting\n4. Value proposition\n5. Clear CTA\n6. P.S. line (if appropriate)\n\n**Optimize for:**\n- Mobile readability\n- Scan-ability\n- Conversion",
+      "description": "Craft high-converting email copy",
+      "category": "content-creation",
+      "difficulty": "intermediate",
+      "rating": 4.7,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "email-marketing",
+        "copywriting",
+        "conversion"
+      ],
+      "use_cases": [
+        "Email campaigns",
+        "Cold outreach",
+        "Newsletters"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "business-001",
+      "title": "SWOT Analysis Generator",
+      "prompt": "Create a detailed SWOT analysis for [COMPANY/PROJECT/DECISION]:\n\n**Context:**\n- Industry: [industry]\n- Current situation: [brief description]\n- Goal: [what you're analyzing for]\n\n**Provide:**\n1. **Strengths:** Internal positive factors (5-7 items)\n2. **Weaknesses:** Internal challenges (5-7 items)\n3. **Opportunities:** External positive factors (5-7 items)\n4. **Threats:** External risks (5-7 items)\n5. **Strategic recommendations** based on the analysis\n6. **Priority actions** for next 90 days",
+      "description": "Comprehensive strategic business analysis",
+      "category": "business",
+      "difficulty": "intermediate",
+      "rating": 4.8,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "strategy",
+        "business-analysis",
+        "planning"
+      ],
+      "use_cases": [
+        "Strategic planning",
+        "Business decisions",
+        "Market analysis"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "business-002",
+      "title": "Meeting Minutes Generator",
+      "prompt": "Create professional meeting minutes from these notes:\n\n**Meeting Details:**\n- Date: [date]\n- Attendees: [names]\n- Topic: [meeting purpose]\n\n**Raw Notes:**\n[YOUR NOTES]\n\n**Format as:**\n1. Meeting overview\n2. Key discussion points\n3. Decisions made\n4. Action items (with owners and deadlines)\n5. Next steps\n6. Next meeting date/time",
+      "description": "Transform meeting notes into professional minutes",
+      "category": "business",
+      "difficulty": "beginner",
+      "rating": 4.5,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "productivity",
+        "meetings",
+        "documentation"
+      ],
+      "use_cases": [
+        "Meeting documentation",
+        "Team communication",
+        "Project management"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "business-003",
+      "title": "Professional Email Drafter",
+      "prompt": "Draft a professional email to [RECIPIENT] regarding [TOPIC]:\n\n**Context:**\n- Relationship: [boss/client/colleague/vendor]\n- Situation: [brief background]\n- Goal: [what you want to achieve]\n- Tone: [formal/semi-formal/friendly]\n\n**Include:**\n1. Appropriate greeting\n2. Clear subject line\n3. Context/background (brief)\n4. Main request/message\n5. Next steps or call-to-action\n6. Professional closing\n\n**Ensure:**\n- Clarity and conciseness\n- Professional tone\n- Actionable next steps",
+      "description": "Write clear, professional business emails",
+      "category": "business",
+      "difficulty": "beginner",
+      "rating": 4.6,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "email",
+        "communication",
+        "professional"
+      ],
+      "use_cases": [
+        "Business communication",
+        "Client relations",
+        "Professional correspondence"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "learning-001",
+      "title": "Concept Explainer",
+      "prompt": "Explain [COMPLEX_CONCEPT] as if I'm [AUDIENCE: 5-year-old/beginner/different profession]:\n\n**Use:**\n1. Simple analogies from everyday life\n2. No jargon (or explain any necessary terms)\n3. Real-world examples\n4. Visual descriptions\n5. Progressive complexity (start simple, build up)\n\n**Then provide:**\n- A slightly more technical explanation\n- Common misconceptions\n- Why it matters\n- Resources to learn more",
+      "description": "Make complex topics accessible to anyone",
+      "category": "learning",
+      "difficulty": "beginner",
+      "rating": 4.9,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "education",
+        "learning",
+        "explanation"
+      ],
+      "use_cases": [
+        "Learning new topics",
+        "Teaching others",
+        "Simplifying concepts"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "learning-002",
+      "title": "Study Guide Creator",
+      "prompt": "Create a comprehensive study guide for [TOPIC/SUBJECT]:\n\n**Learning Goals:**\n- [Goal 1]\n- [Goal 2]\n- [Goal 3]\n\n**Include:**\n1. Key concepts overview\n2. Important terms and definitions\n3. Core principles/theories\n4. Practice questions (with answers)\n5. Common mistakes to avoid\n6. Memory aids/mnemonics\n7. Additional resources\n8. Self-assessment checklist",
+      "description": "Structured study materials for effective learning",
+      "category": "learning",
+      "difficulty": "intermediate",
+      "rating": 4.7,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "education",
+        "study",
+        "learning"
+      ],
+      "use_cases": [
+        "Exam preparation",
+        "Self-study",
+        "Course review"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "creative-001",
+      "title": "Story Generator",
+      "prompt": "Write a [GENRE] story with these elements:\n\n**Story Elements:**\n- Setting: [time/place]\n- Main character: [brief description]\n- Conflict: [central problem]\n- Tone: [dark/light/mysterious/humorous]\n- Length: [short/medium/long]\n\n**Include:**\n1. Compelling opening hook\n2. Character development\n3. Rising tension\n4. Unexpected twist\n5. Satisfying resolution\n\n**Style:** [descriptive/fast-paced/dialogue-heavy/introspective]",
+      "description": "Generate creative stories with specific elements",
+      "category": "creative",
+      "difficulty": "intermediate",
+      "rating": 4.7,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "creative-writing",
+        "storytelling",
+        "fiction"
+      ],
+      "use_cases": [
+        "Creative writing",
+        "Entertainment",
+        "Writing practice"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "creative-002",
+      "title": "Character Developer",
+      "prompt": "Create a detailed character profile for [TYPE: protagonist/antagonist/supporting character]:\n\n**Basic Info:**\n- Genre: [genre]\n- Role in story: [description]\n\n**Develop:**\n1. **Physical Description:** Distinctive features, appearance\n2. **Personality:** Traits, quirks, habits\n3. **Background:** History, formative experiences\n4. **Motivations:** Goals, fears, desires\n5. **Relationships:** Key connections\n6. **Character Arc:** How they change\n7. **Voice:** How they speak, mannerisms\n8. **Secrets:** Hidden aspects\n\n**Make them:** Three-dimensional, memorable, believable",
+      "description": "Build complex, memorable characters",
+      "category": "creative",
+      "difficulty": "advanced",
+      "rating": 4.8,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "creative-writing",
+        "character-development",
+        "storytelling"
+      ],
+      "use_cases": [
+        "Novel writing",
+        "Screenwriting",
+        "Game development"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "productivity-001",
+      "title": "Project Planner",
+      "prompt": "Create a detailed project plan for [PROJECT]:\n\n**Project Details:**\n- Goal: [end objective]\n- Timeline: [duration]\n- Resources: [available resources]\n- Constraints: [limitations]\n\n**Provide:**\n1. **Project Breakdown:** Major phases/milestones\n2. **Task List:** Specific actionable tasks\n3. **Timeline:** Gantt-style schedule\n4. **Dependencies:** What depends on what\n5. **Risk Assessment:** Potential issues and mitigation\n6. **Success Metrics:** How to measure progress\n7. **Resource Allocation:** Who does what\n8. **Communication Plan:** Updates and reporting",
+      "description": "Comprehensive project planning and organization",
+      "category": "productivity",
+      "difficulty": "advanced",
+      "rating": 4.7,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "project-management",
+        "planning",
+        "organization"
+      ],
+      "use_cases": [
+        "Project management",
+        "Planning",
+        "Team coordination"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "productivity-002",
+      "title": "Daily Schedule Optimizer",
+      "prompt": "Optimize my daily schedule for maximum productivity:\n\n**Current Situation:**\n- Work hours: [time range]\n- Must-do tasks: [list]\n- Energy peaks: [when you're most alert]\n- Constraints: [meetings, commitments]\n\n**Goals:**\n- [Priority 1]\n- [Priority 2]\n- [Priority 3]\n\n**Create:**\n1. Time-blocked schedule\n2. Task batching suggestions\n3. Break times (with activities)\n4. Buffer time for unexpected items\n5. Evening wind-down routine\n6. Tips for staying on track",
+      "description": "Optimize your day for peak productivity",
+      "category": "productivity",
+      "difficulty": "beginner",
+      "rating": 4.6,
+      "models": [
+        "chatgpt",
+        "claude",
+        "gemini"
+      ],
+      "tags": [
+        "time-management",
+        "productivity",
+        "scheduling"
+      ],
+      "use_cases": [
+        "Time management",
+        "Productivity",
+        "Work-life balance"
+      ],
+      "copy_count": 0
+    },
+    {
+      "id": "image-001",
+      "title": "Photorealistic Scene",
+      "prompt": "A photorealistic image of [SUBJECT] in [SETTING], [TIME_OF_DAY] lighting, shot with [CAMERA_TYPE], [COMPOSITION], ultra-detailed, 8k resolution, professional photography",
+      "description": "Generate ultra-realistic photographic images",
+      "category": "image-generation",
+      "difficulty": "intermediate",
+      "rating": 4.8,
+      "models": [
+        "dalle",
+        "midjourney",
+        "stable-diffusion"
+      ],
+      "tags": [
+        "photography",
+        "realistic",
+        "professional"
+      ],
+      "use_cases": [
+        "Marketing materials",
+        "Concept art",
+        "Visual design"
+      ],
+      "example": "A photorealistic image of a cozy coffee shop in downtown Seattle, golden hour lighting, shot with Canon EOS R5, wide angle composition, ultra-detailed, 8k resolution, professional photography",
+      "copy_count": 0
+    },
+    {
+      "id": "image-002",
+      "title": "Artistic Style Transfer",
+      "prompt": "[SUBJECT] in the style of [ARTIST/ART_MOVEMENT], [MEDIUM: oil painting/watercolor/digital art], [COLOR_PALETTE], [MOOD], highly detailed, masterpiece quality",
+      "description": "Create images in specific artistic styles",
+      "category": "image-generation",
+      "difficulty": "intermediate",
+      "rating": 4.7,
+      "models": [
+        "dalle",
+        "midjourney",
+        "stable-diffusion"
+      ],
+      "tags": [
+        "art",
+        "style",
+        "creative"
+      ],
+      "use_cases": [
+        "Artistic projects",
+        "Unique visuals",
+        "Creative exploration"
+      ],
+      "example": "A futuristic city in the style of Van Gogh, oil painting, vibrant blues and yellows, dreamlike mood, highly detailed, masterpiece quality",
+      "copy_count": 0
+    },
+    {
+      "id": "image-003",
+      "title": "Product Mockup",
+      "prompt": "[PRODUCT] product photography, clean white background, professional studio lighting, centered composition, high-end commercial photography, sharp focus, 4k quality, minimalist aesthetic",
+      "description": "Professional product photography for e-commerce",
+      "category": "image-generation",
+      "difficulty": "beginner",
+      "rating": 4.6,
+      "models": [
+        "dalle",
+        "midjourney",
+        "stable-diffusion"
+      ],
+      "tags": [
+        "product",
+        "commercial",
+        "e-commerce"
+      ],
+      "use_cases": [
+        "E-commerce",
+        "Product design",
+        "Marketing"
+      ],
+      "example": "Sleek wireless headphones product photography, clean white background, professional studio lighting, centered composition, high-end commercial photography, sharp focus, 4k quality, minimalist aesthetic",
+      "copy_count": 0
+    }
+  ]
+}
