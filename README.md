@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/gunjanjaswal/Awesome-Generative-AI-Prompts?style=social)](https://github.com/gunjanjaswal/Awesome-Generative-AI-Prompts/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/gunjanjaswal/Awesome-Generative-AI-Prompts?style=social)](https://github.com/gunjanjaswal/Awesome-Generative-AI-Prompts/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow.svg)](https://buymeacoffee.com/gunjanjaswal)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B.svg)](https://ko-fi.com/gunjanjaswal)
 
 ### 🎯 Production-Ready Prompts for Developers & Creators
 
@@ -778,9 +778,9 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## ☕ Support This Project
 
-If you find PromptVault helpful, consider buying me a coffee! Your support helps keep this project free and updated.
+If you find PromptVault helpful, consider supporting me on Ko-fi! Your support helps keep this project free and updated.
 
-<a href="https://buymeacoffee.com/gunjanjaswal" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<a href="https://ko-fi.com/gunjanjaswal" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=6" alt="Support me on Ko-fi" style="height: 60px !important;width: 217px !important;" ></a>
 
 ---
 
